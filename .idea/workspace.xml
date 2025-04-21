@@ -7,9 +7,12 @@
     <list default="true" id="5700b1a1-bc5a-407d-a3c5-c954d39b00b4" name="Changes" comment="negative">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/steps/errorResponse400.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/steps/errorResponse401.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/weatherApiTestingWiremock/RunCucumberTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/RunCucumberTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/RunCucumberTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/RunCucumberTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/steps/common/CommonResponseSteps.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/steps/errorResponse400.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/steps/errorResponse400.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/steps/errorResponse401.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/steps/errorResponse401.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/resources/features/errorResponse400.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/errorResponse400.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/features/errorResponse401.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/errorResponse401.feature" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,6 +38,9 @@
   <component name="ProjectCodeStyleSettingsMigration">
     <option name="version" value="2" />
   </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 2
+}]]></component>
   <component name="ProjectId" id="2w2AuGjkWEHqr5pIl71yzwe6m7c" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
@@ -43,9 +49,13 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "JUnit.RunCucumberTest.executor": "Run",
+    "Maven.weatherApiTestingWiremock [install].executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true"
+    "RunOnceActivity.git.unshallow": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "kotlin-language-version-configured": "true"
   }
 }]]></component>
   <component name="RecentsManager">
@@ -56,7 +66,7 @@
       <recent name="com.steps" />
     </key>
   </component>
-  <component name="RunManager" selected="Cucumber Java.Feature: errorResponse400">
+  <component name="RunManager" selected="JUnit.RunCucumberTest">
     <configuration name="Feature: errorResponse400" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="5" />
       <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/errorResponse400.feature" />
@@ -94,14 +104,15 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Scenario: Успешный GET-запрос" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+    <configuration name="Scenario: Проверка соответствия ответа структуре из файла" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="5" />
       <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/errorResponse400.feature" />
+      <option name="GLUE" value="com.steps" />
       <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
       <module name="weatherApiTestingWiremock" />
-      <option name="NAME_FILTER" value="^Успешный GET\-запрос$" />
-      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^Успешный GET\-запрос$&quot;" />
-      <option name="SUGGESTED_NAME" value="Scenario: Успешный GET-запрос" />
+      <option name="NAME_FILTER" value="^Проверка соответствия ответа структуре из файла$" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^Проверка соответствия ответа структуре из файла$&quot;" />
+      <option name="SUGGESTED_NAME" value="Scenario: Проверка соответствия ответа структуре из файла" />
       <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
       <extension name="coverage">
         <pattern>
@@ -113,15 +124,14 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Scenario: Проверка соответствия ответа структуре из файла" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+    <configuration name="Scenario: Успешный GET-запрос" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="5" />
       <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/errorResponse400.feature" />
-      <option name="GLUE" value="com.steps" />
       <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
       <module name="weatherApiTestingWiremock" />
-      <option name="NAME_FILTER" value="^Проверка соответствия ответа структуре из файла$" />
-      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^Проверка соответствия ответа структуре из файла$&quot;" />
-      <option name="SUGGESTED_NAME" value="Scenario: Проверка соответствия ответа структуре из файла" />
+      <option name="NAME_FILTER" value="^Успешный GET\-запрос$" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^Успешный GET\-запрос$&quot;" />
+      <option name="SUGGESTED_NAME" value="Scenario: Успешный GET-запрос" />
       <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
       <extension name="coverage">
         <pattern>
@@ -150,11 +160,7 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Cucumber Java.Feature: errorResponse400" />
-        <item itemvalue="Cucumber Java.Scenario: Проверка соответствия ответа структуре из файла" />
         <item itemvalue="JUnit.RunCucumberTest" />
-        <item itemvalue="Cucumber Java.Feature: errorResponse401" />
-        <item itemvalue="Cucumber Java.Scenario: Успешный GET-запрос" />
       </list>
     </recent_temporary>
   </component>

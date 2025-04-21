@@ -1,0 +1,6 @@
+{
+    "error": {
+        "code": 2008,
+        "message": "API key has been disabled."
+    }
+}

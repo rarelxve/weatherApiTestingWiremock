@@ -1,0 +1,6 @@
+{
+  "error": {
+    "code": 9001,
+    "message": "Json body contains too many locations for bulk request. Please keep it below 50 in a single request."
+  }
+}

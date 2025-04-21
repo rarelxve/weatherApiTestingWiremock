@@ -33,7 +33,7 @@
             <version>7.15.0</version>
             <scope>test</scope>
         </dependency>
-        <!-- Логгирование -->
+        <!-- Логирование -->
         <dependency>
             <groupId>org.slf4j</groupId>
             <artifactId>slf4j-api</artifactId>
@@ -56,6 +56,11 @@
             <artifactId>jsonassert</artifactId>
             <version>1.5.1</version>
             <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>com.github.javafaker</groupId>
+            <artifactId>javafaker</artifactId>
+            <version>1.0.2</version>
         </dependency>
         <!-- JUnit -->
         <dependency>
