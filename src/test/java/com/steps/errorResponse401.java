@@ -5,11 +5,8 @@ import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import io.qameta.allure.Step;
-import io.restassured.path.json.JsonPath;
 import io.restassured.response.Response;
-import org.json.JSONException;
-import org.junit.jupiter.api.Assertions;
-import org.skyscreamer.jsonassert.JSONAssert;
+
 
 import java.io.IOException;
 import java.nio.file.Files;
@@ -19,29 +16,30 @@ import static com.github.tomakehurst.wiremock.client.WireMock.*;
 import static io.restassured.RestAssured.given;
 
 
-public class errorResponse400 extends CommonResponseSteps {
+public class errorResponse401 extends CommonResponseSteps {
     private String baseUrl;
 
-    @Given("API эмулирует ответ с ошибкой 1003 из файла")
-    public void mockApiErrorResponseFromFileError1003() throws IOException {
+    @Given("API эмулирует ответ с ошибкой 1002 из файла")
+    public void mockApiErrorResponseFromFile() throws IOException {
         expectedResponse = new String(Files.readAllBytes(
-                Paths.get("src/test/resources/expected_responses/weather_response_q_is_missing.json")
+                Paths.get("src/test/resources/expected_responses/weather_error.json")
         ));
         stubFor(get(urlPathEqualTo("/v1/current.json"))
                 .willReturn(aResponse()
-                        .withStatus(400)
+                        .withStatus(401)
                         .withHeader("Content-Type", "application/json")
                         .withBody(expectedResponse)
                 ));
         baseUrl = "http://localhost:" + WireMockTestConfig.wireMockServer.port();
     }
 
-    @When("Я отправляю GET-запрос на weather API без параметра Q")
-    public void sendRequestToWeatherApiWithoutQ() {
+    @When("Я отправляю GET-запрос на weather API")
+    public void sendRequestToWeatherApi() {
         response = given()
                 .baseUri(baseUrl)
+                .queryParam("q", "bulk")
                 .queryParam("lang", "ru")
-                .queryParam("key", "74c442b273ce46a1832121006252004")
+                .queryParam("key", "123")
                 .when()
                 .get("/v1/current.json");
     }
