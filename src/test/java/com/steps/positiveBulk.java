@@ -1,6 +1,5 @@
 package com.steps;
 
-import io.cucumber.java.Before;
 import io.cucumber.java.en.*;
 import io.restassured.response.Response;
 import org.junit.jupiter.api.Assertions;
@@ -11,26 +10,12 @@ import java.nio.file.Paths;
 
 import static com.github.tomakehurst.wiremock.client.WireMock.*;
 import static io.restassured.RestAssured.given;
-import io.cucumber.java.Before;
-import io.cucumber.java.en.*;
-import io.restassured.path.json.JsonPath;
-import io.restassured.response.Response;
-import org.json.JSONException;
-import org.skyscreamer.jsonassert.JSONAssert;
-import org.skyscreamer.jsonassert.JSONCompareMode;
-import org.skyscreamer.jsonassert.comparator.DefaultComparator;
-import org.skyscreamer.jsonassert.comparator.JSONComparator;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 
-import java.io.IOException;
-import java.nio.file.Files;
-import java.nio.file.Paths;
+import io.restassured.path.json.JsonPath;
+
 import java.util.List;
 import java.util.Map;
 
-import static com.github.tomakehurst.wiremock.client.WireMock.*;
-import static io.restassured.RestAssured.given;
 import static org.junit.jupiter.api.Assertions.*;
 public class positiveBulk {
     private Response response;

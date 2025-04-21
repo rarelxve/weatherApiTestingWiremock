@@ -3,7 +3,7 @@ package com.steps;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
-import io.qameta.allure.Step;
+
 import io.restassured.response.Response;
 import io.restassured.path.json.JsonPath;
 import org.json.JSONException;
@@ -13,12 +13,11 @@ import org.skyscreamer.jsonassert.JSONAssert;
 import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Paths;
-import org.junit.Assert;
+
 
 import static com.github.tomakehurst.wiremock.client.WireMock.*;
 import static io.restassured.RestAssured.given;
-import static com.github.tomakehurst.wiremock.client.WireMock.*;
-import static io.restassured.RestAssured.given;
+
 
 
 public class errorResponse401 {
