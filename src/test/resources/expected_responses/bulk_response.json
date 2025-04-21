@@ -1,0 +1,208 @@
+{
+  "bulk": [
+    {
+      "query": {
+        "custom_id": "",
+        "q": "Ярославль",
+        "location": {
+          "name": "Ярославль",
+          "region": "Yaroslavl'",
+          "country": "Россия",
+          "lat": 57.6167,
+          "lon": 39.8667,
+          "tz_id": "Europe/Moscow",
+          "localtime_epoch": 1745262126,
+          "localtime": "2025-04-21 22:02"
+        },
+        "current": {
+          "last_updated_epoch": 1745262000,
+          "last_updated": "2025-04-21 22:00",
+          "temp_c": 14.2,
+          "temp_f": 57.6,
+          "is_day": 0,
+          "condition": {
+            "text": "Местами дождь",
+            "icon": "//cdn.weatherapi.com/weather/64x64/night/176.png",
+            "code": 1063
+          },
+          "wind_mph": 4.9,
+          "wind_kph": 7.9,
+          "wind_degree": 288,
+          "wind_dir": "WNW",
+          "pressure_mb": 1011.0,
+          "pressure_in": 29.87,
+          "precip_mm": 0.01,
+          "precip_in": 0.0,
+          "humidity": 72,
+          "cloud": 89,
+          "feelslike_c": 14.0,
+          "feelslike_f": 57.1,
+          "windchill_c": 14.0,
+          "windchill_f": 57.1,
+          "heatindex_c": 14.2,
+          "heatindex_f": 57.6,
+          "dewpoint_c": 9.3,
+          "dewpoint_f": 48.7,
+          "vis_km": 10.0,
+          "vis_miles": 6.0,
+          "uv": 0.0,
+          "gust_mph": 8.9,
+          "gust_kph": 14.3
+        }
+      }
+    },
+    {
+      "query": {
+        "custom_id": "",
+        "q": "Москва",
+        "location": {
+          "name": "Москва",
+          "region": "Moscow City",
+          "country": "Россия",
+          "lat": 55.7522,
+          "lon": 37.6156,
+          "tz_id": "Europe/Moscow",
+          "localtime_epoch": 1745262126,
+          "localtime": "2025-04-21 22:02"
+        },
+        "current": {
+          "last_updated_epoch": 1745262000,
+          "last_updated": "2025-04-21 22:00",
+          "temp_c": 18.3,
+          "temp_f": 64.9,
+          "is_day": 0,
+          "condition": {
+            "text": "Ясно",
+            "icon": "//cdn.weatherapi.com/weather/64x64/night/113.png",
+            "code": 1000
+          },
+          "wind_mph": 11.0,
+          "wind_kph": 17.6,
+          "wind_degree": 215,
+          "wind_dir": "SW",
+          "pressure_mb": 1012.0,
+          "pressure_in": 29.88,
+          "precip_mm": 0.0,
+          "precip_in": 0.0,
+          "humidity": 32,
+          "cloud": 0,
+          "feelslike_c": 18.3,
+          "feelslike_f": 64.9,
+          "windchill_c": 17.0,
+          "windchill_f": 62.7,
+          "heatindex_c": 17.0,
+          "heatindex_f": 62.7,
+          "dewpoint_c": 6.9,
+          "dewpoint_f": 44.5,
+          "vis_km": 10.0,
+          "vis_miles": 6.0,
+          "uv": 0.0,
+          "gust_mph": 18.5,
+          "gust_kph": 29.8
+        }
+      }
+    },
+    {
+      "query": {
+        "custom_id": "",
+        "q": "Екатеринбург",
+        "location": {
+          "name": "Екатеринбург",
+          "region": "Sverdlovsk",
+          "country": "Россия",
+          "lat": 56.85,
+          "lon": 60.6,
+          "tz_id": "Asia/Yekaterinburg",
+          "localtime_epoch": 1745262126,
+          "localtime": "2025-04-22 00:02"
+        },
+        "current": {
+          "last_updated_epoch": 1745262000,
+          "last_updated": "2025-04-22 00:00",
+          "temp_c": 8.2,
+          "temp_f": 46.8,
+          "is_day": 0,
+          "condition": {
+            "text": "Дымка",
+            "icon": "//cdn.weatherapi.com/weather/64x64/night/143.png",
+            "code": 1030
+          },
+          "wind_mph": 9.8,
+          "wind_kph": 15.8,
+          "wind_degree": 245,
+          "wind_dir": "WSW",
+          "pressure_mb": 1017.0,
+          "pressure_in": 30.03,
+          "precip_mm": 0.0,
+          "precip_in": 0.0,
+          "humidity": 100,
+          "cloud": 100,
+          "feelslike_c": 5.6,
+          "feelslike_f": 42.1,
+          "windchill_c": 7.3,
+          "windchill_f": 45.2,
+          "heatindex_c": 9.6,
+          "heatindex_f": 49.3,
+          "dewpoint_c": 7.6,
+          "dewpoint_f": 45.7,
+          "vis_km": 1.4,
+          "vis_miles": 0.0,
+          "uv": 0.0,
+          "gust_mph": 19.0,
+          "gust_kph": 30.6
+        }
+      }
+    },
+    {
+      "query": {
+        "custom_id": "",
+        "q": "Казань",
+        "location": {
+          "name": "Казань",
+          "region": "Tatarstan",
+          "country": "Россия",
+          "lat": 55.75,
+          "lon": 49.1333,
+          "tz_id": "Europe/Moscow",
+          "localtime_epoch": 1745262126,
+          "localtime": "2025-04-21 22:02"
+        },
+        "current": {
+          "last_updated_epoch": 1745262000,
+          "last_updated": "2025-04-21 22:00",
+          "temp_c": 17.3,
+          "temp_f": 63.1,
+          "is_day": 0,
+          "condition": {
+            "text": "Ясно",
+            "icon": "//cdn.weatherapi.com/weather/64x64/night/113.png",
+            "code": 1000
+          },
+          "wind_mph": 11.6,
+          "wind_kph": 18.7,
+          "wind_degree": 231,
+          "wind_dir": "SW",
+          "pressure_mb": 1016.0,
+          "pressure_in": 30.0,
+          "precip_mm": 0.0,
+          "precip_in": 0.0,
+          "humidity": 32,
+          "cloud": 0,
+          "feelslike_c": 17.3,
+          "feelslike_f": 63.1,
+          "windchill_c": 15.7,
+          "windchill_f": 60.2,
+          "heatindex_c": 15.7,
+          "heatindex_f": 60.2,
+          "dewpoint_c": 5.4,
+          "dewpoint_f": 41.7,
+          "vis_km": 10.0,
+          "vis_miles": 6.0,
+          "uv": 0.0,
+          "gust_mph": 23.8,
+          "gust_kph": 38.2
+        }
+      }
+    }
+  ]
+}
