@@ -1,5 +1,5 @@
 @allure.label.owner:dkarayanov
-  @Test
+
 Feature: Тестирование получения ошибки 400 (без указания q/ошибка 1003)
 
   @smoke

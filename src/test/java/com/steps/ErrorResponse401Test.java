@@ -7,7 +7,6 @@ import io.cucumber.java.en.When;
 import io.restassured.response.Response;
 import io.restassured.path.json.JsonPath;
 import org.json.JSONException;
-import org.junit.jupiter.api.Assertions;
 import org.skyscreamer.jsonassert.JSONAssert;
 
 import java.io.IOException;
@@ -16,13 +15,14 @@ import java.nio.file.*;
 
 import static com.github.tomakehurst.wiremock.client.WireMock.*;
 import static io.restassured.RestAssured.given;
-
+import static org.junit.Assert.assertEquals;
 
 
 public class ErrorResponse401Test {
     private String baseUrl;
     private String expectedResponse401;
     private Response response;
+
     @Given("API эмулирует ответ с ошибкой 1002 из файла")
     public void mockApiErrorResponseFromFile() throws IOException {
         expectedResponse401 = new String(Files.readAllBytes(
@@ -47,21 +47,22 @@ public class ErrorResponse401Test {
                 .when()
                 .get("/v1/current.json");
     }
+
     @Then("Ответ соответствует структуре из файла weather_error")
     public void verifyResponseStructureError401() {
         JsonPath expectedJson = new JsonPath(expectedResponse401);
         JsonPath actualJson = response.jsonPath();
 
-        Assertions.assertEquals(
+        assertEquals(
+                "Код ошибки совпадает, равен " + actualJson.getInt("error.code"),
                 expectedJson.getInt("error.code"),
-                actualJson.getInt("error.code"),
-                "Код ошибки совпадает, равен" + actualJson.getInt("error.code")
+                actualJson.getInt("error.code")
         );
 
-        Assertions.assertEquals(
+        assertEquals(
+                "Сообщение об ошибке совпадает",
                 expectedJson.getString("error.message"),
-                actualJson.getString("error.message"),
-                "Сообщение об ошибке совпадает"
+                actualJson.getString("error.message")
         );
     }
 

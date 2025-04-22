@@ -6,7 +6,6 @@ import io.cucumber.java.en.When;
 import io.restassured.path.json.JsonPath;
 import io.restassured.response.Response;
 import org.json.JSONException;
-import org.junit.jupiter.api.Assertions;
 import org.skyscreamer.jsonassert.JSONAssert;
 
 import java.io.IOException;
@@ -15,6 +14,7 @@ import java.nio.file.Paths;
 
 import static com.github.tomakehurst.wiremock.client.WireMock.*;
 import static io.restassured.RestAssured.given;
+import static org.junit.Assert.assertEquals;
 
 
 public class ErrorResponse403Test {
@@ -54,16 +54,16 @@ public class ErrorResponse403Test {
         JsonPath expectedJson = new JsonPath(expectedResponse403);
         JsonPath actualJson = response.jsonPath();
 
-        Assertions.assertEquals(
+        assertEquals(
+                "Код ошибки совпадает, равен " + actualJson.getInt("error.code"),
                 expectedJson.getInt("error.code"),
-                actualJson.getInt("error.code"),
-                "Код ошибки совпадает, равен" + actualJson.getInt("error.code")
+                actualJson.getInt("error.code")
         );
 
-        Assertions.assertEquals(
+        assertEquals(
+                "Сообщение об ошибке совпадает",
                 expectedJson.getString("error.message"),
-                actualJson.getString("error.message"),
-                "Сообщение об ошибке совпадает"
+                actualJson.getString("error.message")
         );
     }
 

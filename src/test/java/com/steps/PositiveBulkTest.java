@@ -2,7 +2,8 @@ package com.steps;
 
 import io.cucumber.java.en.*;
 import io.restassured.response.Response;
-import org.junit.jupiter.api.Assertions;
+
+import static org.junit.Assert.*;
 
 import java.io.IOException;
 import java.nio.file.Files;
@@ -10,7 +11,7 @@ import java.nio.file.Paths;
 
 import static com.github.tomakehurst.wiremock.client.WireMock.*;
 import static io.restassured.RestAssured.given;
-import static org.junit.jupiter.api.Assertions.*;
+import static org.junit.Assert.assertEquals;
 
 import io.restassured.path.json.JsonPath;
 
@@ -23,6 +24,7 @@ public class PositiveBulkTest {
     private String baseUrl;
     private String expectedResponse;
 
+
     @Given("Настроен корректный ответ для bulk-запроса из файла")
     public void setupMockResponse() throws IOException {
         expectedResponse = Files.readString(Paths.get(
@@ -34,7 +36,7 @@ public class PositiveBulkTest {
                 .withQueryParam("lang", equalTo("ru"))
                 .withQueryParam("key", equalTo("74c442b273ce46a1832121006252004"))
                 .willReturn(okJson(expectedResponse)));
-         baseUrl = "http://localhost:" + WireMockTestConfig.wireMockServer.port();
+        baseUrl = "http://localhost:" + WireMockTestConfig.wireMockServer.port();
     }
 
     @When("Я отправляю POST-запрос с четырьмя городами")
@@ -59,26 +61,26 @@ public class PositiveBulkTest {
         JsonPath json = response.jsonPath();
         List<Map<String, Object>> bulk = json.getList("bulk");
 
-        bulk.forEach(item -> {
+        for (Map<String, Object> item : bulk) {
             Map<String, Object> query = (Map<String, Object>) item.get("query");
-            assertAll("Проверка структуры элемента",
-                    () -> assertTrue(query.containsKey("q"), "Отсутствует поле 'q'"),
-                    () -> assertNotNull(query.get("location"), "Отсутствует объект 'location'"),
-                    () -> assertNotNull(query.get("current"), "Отсутствует объект 'current'"),
-                    () -> assertTrue(((Map<?, ?>) query.get("location")).containsKey("name"),
-                            "Отсутствует поле 'name' в location"),
-                    () -> assertTrue(((Map<?, ?>) query.get("current")).containsKey("temp_c"),
-                            "Отсутствует поле 'temp_c' в current")
-            );
-        });
-    }
 
+            // Проверки заменены на отдельные assertions
+            assertTrue("Отсутствует поле 'q'", query.containsKey("q"));
+            assertNotNull("Отсутствует объект 'location'", query.get("location"));
+            assertNotNull("Отсутствует объект 'current'", query.get("current"));
+
+            Map<?, ?> location = (Map<?, ?>) query.get("location");
+            assertTrue("Отсутствует поле 'name' в location", location.containsKey("name"));
+
+            Map<?, ?> current = (Map<?, ?>) query.get("current");
+            assertTrue("Отсутствует поле 'temp_c' в current", current.containsKey("temp_c"));
+        }
+    }
 
     @Then("Ответ содержит данные по четырем городам")
     public void checkCitiesCount() {
         int actualCount = response.jsonPath().getList("bulk").size();
-        Assertions.assertEquals(4, actualCount,
-                "Количество городов в ответе должно быть 4");
+        assertEquals("Количество городов в ответе должно быть 4", 4, actualCount);
     }
 
     @Then("Конкретные параметры городов соответствуют:")
@@ -94,7 +96,7 @@ public class PositiveBulkTest {
             );
 
             String actualValue = response.jsonPath().getString(jsonPath);
-            Assertions.assertEquals(expectedValue, actualValue);
+            assertEquals(expectedValue, actualValue);
         });
     }
 }

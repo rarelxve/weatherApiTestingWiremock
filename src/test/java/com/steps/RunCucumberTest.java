@@ -1,3 +1,5 @@
+package com.steps;
+
 import io.cucumber.junit.Cucumber;
 import io.cucumber.junit.CucumberOptions;
 import org.junit.runner.RunWith;
@@ -8,8 +10,6 @@ import org.junit.runner.RunWith;
         glue = "com.steps",
         plugin = {
                 "io.qameta.allure.cucumber7jvm.AllureCucumber7Jvm",
-                "pretty",
-                "json:target/allure-results/cucumber.json"
         }
 )
 public class RunCucumberTest {
