@@ -10,14 +10,15 @@ import java.nio.file.Paths;
 
 import static com.github.tomakehurst.wiremock.client.WireMock.*;
 import static io.restassured.RestAssured.given;
+import static org.junit.jupiter.api.Assertions.*;
 
 import io.restassured.path.json.JsonPath;
 
 import java.util.List;
 import java.util.Map;
 
-import static org.junit.jupiter.api.Assertions.*;
-public class positiveBulk {
+
+public class PositiveBulkTest {
     private Response response;
     private String baseUrl;
     private String expectedResponse;

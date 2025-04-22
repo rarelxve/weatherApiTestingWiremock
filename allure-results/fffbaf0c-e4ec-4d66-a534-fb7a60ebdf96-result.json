@@ -1,1 +1,117 @@
-{"uuid":"fffbaf0c-e4ec-4d66-a534-fb7a60ebdf96","historyId":"4f14f4adfe8672caa6aec456e77d6f48","fullName":"src/test/resources/features/errorResponse401.feature:3","labels":[{"name":"host","value":"WIN-504C8HUN4FI"},{"name":"thread","value":"15132@WIN-504C8HUN4FI.main(1)"},{"name":"feature","value":"Тестирование Weather API ошибка 401 (1002)"},{"name":"story","value":"Проверка соответствия ответа структуре из файла"},{"name":"suite","value":"Тестирование Weather API ошибка 401 (1002)"},{"name":"testClass","value":"Проверка соответствия ответа структуре из файла"},{"name":"framework","value":"cucumber4jvm"},{"name":"language","value":"java"},{"name":"gherkin_uri","value":"file:///C:/Users/user/Downloads/weatherApiTestingWiremock/src/test/resources/features/errorResponse401.feature"},{"name":"package","value":"src.test.resources.features.errorResponse401_feature.Тестирование Weather API ошибка 401 (1002)"}],"links":[],"name":"Проверка соответствия ответа структуре из файла","status":"passed","stage":"finished","steps":[{"name":"Given  API эмулирует ответ с ошибкой 1002 из файла","status":"passed","statusDetails":{"known":false,"muted":false,"flaky":false},"stage":"finished","steps":[],"attachments":[],"parameters":[],"start":1745260459253,"stop":1745260459261},{"name":"When  Я отправляю GET-запрос на weather API","status":"passed","statusDetails":{"known":false,"muted":false,"flaky":false},"stage":"finished","steps":[],"attachments":[],"parameters":[],"start":1745260459261,"stop":1745260459276},{"name":"Then  Ответ соответствует структуре из файла weather_error","status":"passed","statusDetails":{"known":false,"muted":false,"flaky":false},"stage":"finished","steps":[],"attachments":[],"parameters":[],"start":1745260459277,"stop":1745260459317},{"name":"And  Ответ точно соответствует JSON из файла weather_error","status":"passed","statusDetails":{"known":false,"muted":false,"flaky":false},"stage":"finished","steps":[],"attachments":[],"parameters":[],"start":1745260459318,"stop":1745260459318}],"attachments":[],"parameters":[],"start":1745260459243,"stop":1745260459321}
+{
+  "uuid": "fffbaf0c-e4ec-4d66-a534-fb7a60ebdf96",
+  "historyId": "4f14f4adfe8672caa6aec456e77d6f48",
+  "fullName": "src/test/resources/features/errorResponse401.feature:3",
+  "labels": [
+    {
+      "name": "host",
+      "value": "WIN-504C8HUN4FI"
+    },
+    {
+      "name": "thread",
+      "value": "15132@WIN-504C8HUN4FI.main(1)"
+    },
+    {
+      "name": "feature",
+      "value": "Тестирование Weather API ошибка 401 (1002)"
+    },
+    {
+      "name": "story",
+      "value": "Проверка соответствия ответа структуре из файла"
+    },
+    {
+      "name": "suite",
+      "value": "Тестирование Weather API ошибка 401 (1002)"
+    },
+    {
+      "name": "testClass",
+      "value": "Проверка соответствия ответа структуре из файла"
+    },
+    {
+      "name": "framework",
+      "value": "cucumber4jvm"
+    },
+    {
+      "name": "language",
+      "value": "java"
+    },
+    {
+      "name": "gherkin_uri",
+      "value": "file:///C:/Users/user/Downloads/weatherApiTestingWiremock/src/test/resources/features/errorResponse401.feature"
+    },
+    {
+      "name": "package",
+      "value": "src.test.resources.features.errorResponse401_feature.Тестирование Weather API ошибка 401 (1002)"
+    }
+  ],
+  "links": [],
+  "name": "Проверка соответствия ответа структуре из файла",
+  "status": "passed",
+  "stage": "finished",
+  "steps": [
+    {
+      "name": "Given  API эмулирует ответ с ошибкой 1002 из файла",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1745260459253,
+      "stop": 1745260459261
+    },
+    {
+      "name": "When  Я отправляю GET-запрос на weather API",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1745260459261,
+      "stop": 1745260459276
+    },
+    {
+      "name": "Then  Ответ соответствует структуре из файла weather_error",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1745260459277,
+      "stop": 1745260459317
+    },
+    {
+      "name": "And  Ответ точно соответствует JSON из файла weather_error",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1745260459318,
+      "stop": 1745260459318
+    }
+  ],
+  "attachments": [],
+  "parameters": [],
+  "start": 1745260459243,
+  "stop": 1745260459321
+}

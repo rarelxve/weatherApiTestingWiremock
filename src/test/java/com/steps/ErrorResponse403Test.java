@@ -17,7 +17,7 @@ import static com.github.tomakehurst.wiremock.client.WireMock.*;
 import static io.restassured.RestAssured.given;
 
 
-public class errorResponse403 {
+public class ErrorResponse403Test {
     private Response response;
     private String baseUrl;
     private String expectedResponse403;

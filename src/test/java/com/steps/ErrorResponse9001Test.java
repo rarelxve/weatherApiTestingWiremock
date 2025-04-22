@@ -21,7 +21,7 @@ import java.util.List;
 import java.util.stream.Collectors;
 import java.util.stream.IntStream;
 
-public class errorResponse9001 {
+public class ErrorResponse9001Test {
     private Response response;
     private String baseUrl;
     private String expectedResponse9001;
