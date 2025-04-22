@@ -1,5 +1,6 @@
-package com.steps;
+package com.steps.negative;
 
+import com.steps.wireMockConfig.WireMockTestConfig;
 import io.cucumber.java.Before;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;

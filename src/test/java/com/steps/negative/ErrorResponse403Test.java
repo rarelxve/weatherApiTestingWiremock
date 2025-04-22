@@ -1,5 +1,6 @@
-package com.steps;
+package com.steps.negative;
 
+import com.steps.wireMockConfig.WireMockTestConfig;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
@@ -49,7 +50,7 @@ public class ErrorResponse403Test {
                 .get("/v1/current.json");
     }
 
-    @Then("Ответ соответствует структуре из файла weather_error_response_code_403")
+    @Then("Ответ соответствует структуре из файла weather_error_response_code_403.json")
     public void verifyResponseStructureError403() {
         JsonPath expectedJson = new JsonPath(expectedResponse403);
         JsonPath actualJson = response.jsonPath();
@@ -67,7 +68,7 @@ public class ErrorResponse403Test {
         );
     }
 
-    @Then("Ответ точно соответствует JSON из файла weather_error_response_code_403")
+    @Then("Ответ точно соответствует JSON из файла weather_error_response_code_403.json")
     public void verifyExactJsonMatch() throws JSONException {
         JSONAssert.assertEquals(
                 expectedResponse403,

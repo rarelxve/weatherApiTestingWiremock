@@ -1,5 +1,6 @@
-package com.steps;
+package com.steps.positive;
 
+import com.steps.wireMockConfig.WireMockTestConfig;
 import io.cucumber.java.en.*;
 import io.restassured.response.Response;
 
