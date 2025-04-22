@@ -4,18 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5700b1a1-bc5a-407d-a3c5-c954d39b00b4" name="Changes" comment="refactor">
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/steps/RunCucumberTest.java" afterDir="false" />
+    <list default="true" id="5700b1a1-bc5a-407d-a3c5-c954d39b00b4" name="Changes" comment="refactor + allure fixed junit4">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/RunCucumberTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/steps/ErrorResponse400Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/steps/ErrorResponse400Test.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/steps/ErrorResponse401Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/steps/ErrorResponse401Test.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/steps/ErrorResponse403Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/steps/ErrorResponse403Test.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/steps/ErrorResponse9001Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/steps/ErrorResponse9001Test.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/steps/PositiveBulkTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/steps/PositiveBulkTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/features/errorResponse400.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/errorResponse400.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/features/errorResponse9001.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/errorResponse9001.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/steps/RunCucumberTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/RunCucumberTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -61,7 +52,8 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "kotlin-language-version-configured": "true"
+    "kotlin-language-version-configured": "true",
+    "last_directory_selection": "/Users/user/Downloads/weatherApiTestingWiremock/src/test/java"
   }
 }]]></component>
   <component name="RecentsManager">
@@ -72,7 +64,7 @@
       <recent name="com.steps" />
     </key>
   </component>
-  <component name="RunManager" selected="Cucumber Java.Feature: errorResponse403">
+  <component name="RunManager" selected="JUnit.RunCucumberTest">
     <configuration name="Feature: bulkRequest" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="5" />
       <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/bulkRequest.feature" />
@@ -137,8 +129,8 @@
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.steps" />
-      <option name="MAIN_CLASS_NAME" value="com.steps.RunCucumberTest" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="RunCucumberTest" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -146,8 +138,8 @@
     </configuration>
     <configuration name="RunCucumberTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="weatherApiTestingWiremock" />
-      <option name="PACKAGE_NAME" value="com.steps" />
-      <option name="MAIN_CLASS_NAME" value="com.steps.RunCucumberTest" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="RunCucumberTest" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -155,8 +147,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Cucumber Java.Feature: errorResponse403" />
         <item itemvalue="JUnit.RunCucumberTest" />
+        <item itemvalue="Cucumber Java.Feature: errorResponse403" />
         <item itemvalue="JUnit.RunCucumberTest (1)" />
         <item itemvalue="Cucumber Java.Feature: errorResponse400" />
         <item itemvalue="Cucumber Java.Feature: bulkRequest" />
@@ -194,7 +186,14 @@
       <option name="project" value="LOCAL" />
       <updated>1745313921494</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="refactor + allure fixed junit4">
+      <created>1745331551307</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1745331551307</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -212,6 +211,7 @@
     <MESSAGE value="negative" />
     <MESSAGE value="aluure" />
     <MESSAGE value="refactor" />
-    <option name="LAST_COMMIT_MESSAGE" value="refactor" />
+    <MESSAGE value="refactor + allure fixed junit4" />
+    <option name="LAST_COMMIT_MESSAGE" value="refactor + allure fixed junit4" />
   </component>
 </project>
